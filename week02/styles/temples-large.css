@@ -1,0 +1,12 @@
+nav ul {
+    display: flex;
+}
+
+main {
+    max-width: 100%;
+    margin: 2rem auto;
+}
+
+.gallery {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
