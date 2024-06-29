@@ -43,8 +43,9 @@ nav ul li a:hover {
 }
 
 main {
-    margin: 2rem;
+    margin: 2rem auto;
     width: 80%;
+    display: block;
 }
 
 h1 {
@@ -121,8 +122,9 @@ nav ul.open {
     }
 
     main {
-        margin: 2rem;
+        margin: 2rem auto;
         width: 80%;
+        display: block;
     }
 
     #menu {
