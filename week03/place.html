@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A place web app created by Sixtus Onumajuru for WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Sixtus Onumajuru">
+    <title>Place | Nigeria</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/place-large.webp" media="(min-width: 999px)">
+                <source srcset="images/place-medium.webp" media="(min-width: 500px) and (max-width: 998px)">
+                <img class="img-pict" src="images/place-small.webp" alt="Place Image">
+            </picture>
+
+        </section>
+        <section class="content">
+            <h2>Data</h2>
+            <p class="data-text-p"><span class="data-text-sp">Country:</span> <span class="data-text">Nigeria</span></p>
+            <p class="data-text-p"><span class="data-text-sp">Area:</span> <span class="data-text">4456 m2</span></p>
+            <p class="data-text-p"><span class="data-text-sp">Name:</span> <span class="data-text">Nigeria</span></p>
+            <p class="data-text-p"><span class="data-text-sp">Capital:</span> <span class="data-text">Nigeria</span></p>
+            <p class="data-text-p"><span class="data-text-sp">President:</span> <span class="data-text">Nigeria</span>
+            </p>
+        </section>
+        <section class="weather">
+            <div class="weather-div">
+                <h2 class="weather-text">Weather <img src="images/weather-icon.svg" class="weather-icon" width="60"
+                        height="60"></h2>
+            </div>
+            <p class="data-text-p"><span class="data-text-sp">Temperature:</span> <span id="temperature">-</span> °C</p>
+            <p class="data-text-p"><span class="data-text-sp">Wind Speed:</span> <span id="wind-speed">-</span> km/h</p>
+            <p class="data-text-p"><span class="data-text-sp">Wind Chill:</span> <span id="wind-chill">N/A</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span>Sixtus Onumajuru | Nigeria <br> Last Modified: <span
+                id="last-modified"></span></p>
+        Photo by <a
+            href="https://unsplash.com/@joaccord?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joshua
+            Oluwagbemiga</a> on <a
+            href="https://unsplash.com/photos/person-riding-on-motorcycle-if1IPTI_iYc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+    </footer>
+</body>
+
+</html>
