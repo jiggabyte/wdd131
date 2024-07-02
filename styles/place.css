@@ -3,9 +3,9 @@
     --secondary-color: darkgreen;
     --tertiary-color: white;
     --default-color: black;
-    --hover-color: gray;
-    --visited-color: gray;
-    --active-color: #ededed;
+    --hover-color: orange;
+    --visited-color: gold;
+    --active-color: yellow;
 }
 
 
