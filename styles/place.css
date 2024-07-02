@@ -3,6 +3,9 @@
     --secondary-color: darkgreen;
     --tertiary-color: white;
     --default-color: black;
+    --hover-color: gray;
+    --visited-color: gray;
+    --active-color: #ededed;
 }
 
 
@@ -44,6 +47,22 @@ footer {
     margin: 0;
     padding: 1rem;
     color: var(--tertiary-color);
+}
+
+a:link {
+    color: var(--tertiary-color);
+}
+
+a:visited {
+    color: var(--visited-color);
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+a:active {
+    color: var(--active-color);
 }
 
 @media (min-width: 999px) {
@@ -117,6 +136,7 @@ footer {
         top: 20px;
         display: none;
     }
+    
 }
 
 @media (max-width: 998px) {
