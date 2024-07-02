@@ -4,8 +4,6 @@
     --tertiary-color: white;
     --default-color: black;
     --hover-color: orange;
-    --visited-color: gold;
-    --active-color: yellow;
 }
 
 
@@ -51,18 +49,15 @@ footer {
 
 a:link {
     color: var(--tertiary-color);
+    text-decoration: underline;
 }
 
 a:visited {
-    color: var(--visited-color);
+    color: var(--tertiary-color);
 }
 
 a:hover {
     color: var(--hover-color);
-}
-
-a:active {
-    color: var(--active-color);
 }
 
 @media (min-width: 999px) {
