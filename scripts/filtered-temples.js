@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p>Location : ${templesData.location}</p>
                 <p>Dedicated: ${templesData.dedicated}</p>
                 <p>Area : ${templesData.area}</p>           
-                <img src="${templesData.imageUrl}" loading="lazy" alt="${templesData.templeName}">
+                <img src="${templesData.imageUrl}" loading="lazy" alt="${templesData.templeName}" width="400" height="250">
             </figure>
                 `;
     }
