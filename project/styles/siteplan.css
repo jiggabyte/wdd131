@@ -1,0 +1,76 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #ffffff;
+    --tertiary-color: #333333;
+    --background-color: #f2f2f2;
+    --default-color: #000000;
+    --hover-color: #ededed;
+    --alternate-color: #d9d9d9;
+    --font-family-text: 'Roboto', sans-serif;
+    --font-family-head: Geogia, serif;
+}
+
+
+body {
+    font-family:  var(--font-family-text);
+    
+    color: var(--tertiary-color);
+    margin: 0;
+    padding: 20px;
+}
+header, section, footer {
+    margin-bottom: 20px;
+}
+h1, h2 {
+    color: var(--primary-color);
+    /*color: #2c3e50 */;
+    text-align: left;
+    font-family:  var(--font-family-head);
+
+}
+.color-sample {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.color-1 {
+    background-color: var(--primary-color);
+    border: 1px solid var(--default-color);
+}
+.color-2 {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--default-color);
+}
+.color-3 {
+    background-color: var(--tertiary-color);
+    border: 1px solid var(--default-color);
+}
+.color-4 {
+    background-color: var(--background-color);
+    border: 1px solid var(--default-color);
+}
+.color-5 {
+    background-color: var(--hover-color);
+    border: 1px solid var(--default-color);
+}
+.color-6 {
+    background-color: var(--default-color);
+    border: 1px solid var(--default-color);
+}
+.color-7 {
+    background-color: var(--alternate-color);
+    border: 1px solid var(--default-color);
+}
+
+#wireframe-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+#wireframe-div img {
+    width: 320px;
+    height: auto;
+}
