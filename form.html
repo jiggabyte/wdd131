@@ -23,10 +23,80 @@
 
 <body>
     <header>
-        <h1></h1>
+        <h1>Product Review Form</h1>
     </header>
     <main>
+        <form id="reviewForm" method="get" action="review.html">
+            <div>
+                <label for="productName">Product Name*
+                    <select id="productName" name="productName" required>
+                        <option value="" disabled selected>Select a Product...</option>
+                    </select>
+                </label>
 
+            </div>
+            <div>
+                <label>Overall Rating*</label>
+                <div id="rating">
+                    <div>
+                        <label  for="star1">⭐️</label>
+                        <input type="radio" id="star1" name="rating" value="1"  required>
+                    </div>
+                    <div>
+                        <label  for="star2">⭐️⭐️</label>
+                        <input type="radio" id="star2" name="rating" value="2"  required>
+                    </div>
+                    <div>
+                        <label  for="star3">⭐️⭐️⭐️</label>
+                        <input type="radio" id="star3" name="rating" value="3"  required>
+                    </div>
+                    <div>
+                        <label  for="star4">⭐️⭐️⭐️⭐️</label>
+                        <input type="radio" id="star4" name="rating" value="4"  required>
+                    </div>
+                    <div>
+                        <label  for="star5">⭐️⭐️⭐️⭐️⭐️</label>
+                        <input type="radio" id="star5" name="rating" value="5"  required>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label for="installationDate">Date of Installation*</label>
+                <input type="date" id="installationDate" name="installationDate" required>
+            </div>
+            <div>
+                <label>Which features did you find Useful?</label>
+                <p class="check-text">(Check all that apply)</p>
+                <div>
+                    <label><input type="checkbox" id="feature1" name="features" value="durability">Durability</label>
+                                       
+                </div>
+                <div>
+                    <label><input type="checkbox" id="feature2" name="features" value="ease">Ease of Use</label>
+
+                </div>
+                <div>
+                    <label><input type="checkbox" id="feature3" name="features" value="performance">Performance</label>
+                                       
+                </div>
+                <div>
+                    <label><input type="checkbox" id="feature4" name="features" value="design">Design</label>
+
+                </div>
+
+            </div>
+            <div>
+                <label for="review">Written Review <span>(Optional)</span></label>
+                <textarea id="review" name="review"></textarea>
+            </div>
+            <div>
+                <label for="userName">Your Name <span>(Optional)</span></label>
+                <input type="text" id="userName" name="userName">
+            </div>
+            <div>
+                <input type="submit" value="Post a Review">
+            </div>
+        </form>
     </main>
     <footer>
         <p>&copy; <span id="year"></span> Sixtus Onumajuru | Nigeria <br> Last Updated: <span id="last-modified"></span>
