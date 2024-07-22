@@ -74,7 +74,7 @@ input[type="submit"]:hover {
 #rating label {
     cursor: pointer;
     font-size: .8em;
-    color: gold;
+    color: rgb(32, 10, 133);
     text-align: center;
 }
 
