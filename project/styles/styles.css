@@ -10,6 +10,7 @@
     --font-family-head: Geogia, serif;
 }
 
+
 body {
     font-family: var(--font-family-text);
     margin: 0;
@@ -17,6 +18,7 @@ body {
     background-color: var(--background-color);
     color: var(--tertiary-color);
     width: 100%;
+    height: auto;
 }
 
 header {
@@ -76,19 +78,24 @@ nav {
 
 .div-text {
     display: block;
-    margin: 80px auto!important;
-    width: 380px!important;
+    margin: 80px auto !important;
+    width: 380px !important;
 }
 
-.div-text p, .div-text button {
+.div-text p,
+.div-text button {
     text-align: center;
     display: block;
     margin: 20px auto;
 }
 
+.div-text a {
+    text-decoration: none;
+}
+
 .div-img {
     margin: 50px 50px 50px 0px;
-    width: 350px!important;
+    width: 350px !important;
 }
 
 .header-text {
@@ -138,10 +145,11 @@ main {
     min-height: 500px;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: var(--primary-color);
     text-align: left;
-    font-family:  var(--font-family-head);
+    font-family: var(--font-family-head);
 
 }
 
@@ -154,7 +162,9 @@ label {
     margin-bottom: 5px;
 }
 
-input[type="text"], input[type="email"], textarea {
+input[type="text"],
+input[type="email"],
+textarea {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -178,22 +188,12 @@ input[type="submit"]:hover {
 /* Responsive Design */
 @media (max-width: 767px) {
 
-    body {
-        font-family: var(--font-family-text);
-        margin: 0;
-        padding: 0;
-        background-color: var(--background-color);
-        color: var(--tertiary-color);
-        width: 100%!important;
-    }
 
     header {
         background-color: var(--secondary-color);
         color: var(--font-family-text);
         padding: 1rem;
         text-align: center;
-        width: 100%;
-        height: auto;
     }
 
     .hero-div {
@@ -204,17 +204,16 @@ input[type="submit"]:hover {
     .div-text {
         display: block;
         margin: 0px;
-        width: 350px!important;
+        width: 350px !important;
     }
-    
+
     .div-img {
         margin: 0px;
-        width: 350px!important;
+        width: 350px !important;
     }
 
     main {
         margin: 2rem auto;
-        width: 100%;
         display: block;
         min-height: 500px;
     }
@@ -238,7 +237,7 @@ input[type="submit"]:hover {
     }
 
     footer {
-        width: 100%!important;
+        width: 100% !important;
     }
 
 }
