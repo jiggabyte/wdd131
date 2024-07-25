@@ -16,6 +16,7 @@ body {
     padding: 0;
     background-color: var(--background-color);
     color: var(--tertiary-color);
+    width: 100%;
 }
 
 header {
@@ -74,11 +75,20 @@ nav {
 }
 
 .div-text {
-    width: 400px!important;
+    display: block;
+    margin: 50px 50px 50px 0px;
+    width: 380px!important;
+}
+
+.div-text p, .div-text button {
+    text-align: center;
+    display: block;
+    margin: 20px auto;
 }
 
 .div-img {
-    width: 400px!important;
+    margin: 50px 50px 50px 0px;
+    width: 350px!important;
 }
 
 .header-text {
@@ -94,7 +104,10 @@ nav {
 .hero-btn {
     background-color: var(--default-color);
     color: var(--secondary-color);
-    width: 100px;
+    width: 120px;
+    height: 44px;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 footer {
@@ -165,6 +178,15 @@ input[type="submit"]:hover {
 /* Responsive Design */
 @media (max-width: 767px) {
 
+    body {
+        font-family: var(--font-family-text);
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        color: var(--tertiary-color);
+        width: 100%;
+    }
+
     header {
         background-color: var(--secondary-color);
         color: var(--font-family-text);
@@ -177,6 +199,17 @@ input[type="submit"]:hover {
     .hero-div {
         display: flex;
         flex-direction: column;
+    }
+
+    .div-text {
+        display: block;
+        margin: 0px;
+        width: 350px!important;
+    }
+    
+    .div-img {
+        margin: 0px;
+        width: 350px!important;
     }
 
     main {
@@ -202,6 +235,10 @@ input[type="submit"]:hover {
         font-weight: bold;
         text-align: center;
         text-decoration: underline;
+    }
+
+    footer {
+        width: 100%;
     }
 
 }
